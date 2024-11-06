@@ -13,7 +13,7 @@ body {
     align-items: center; /* Vertically centers the .wrapper */
     min-height: 100vh; /* Ensures the body takes up at least 100% of the viewport height */
     margin: 0; /* Removes any default margin */
-    background: url(picture/bg4.jpg) no-repeat center center fixed;
+    background: url(bg4.jpg) no-repeat center center fixed;
     background-size: cover;
 }
 
