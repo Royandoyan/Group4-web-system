@@ -58,7 +58,7 @@ document.addEventListener("DOMContentLoaded", function() {
                     // Successfully registered
                     const user = userCredential.user;
                     showMessage(`Successfully registered! Welcome, ${username}`, () => {
-                        window.location.href = "login.html"; // Redirect to login page
+                        window.location.href = "index.html"; // Redirect to login page
                     });
                 })
                 .catch((error) => {
