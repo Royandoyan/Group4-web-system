@@ -48,7 +48,7 @@ async function handleLogin(email) {
 
     // Show a success message
     showMessage('Login successful! Redirecting...', () => {
-        window.location.href = "map.html"; // Redirect to map page
+        window.location.href = "Map.html"; // Redirect to map page
     });
 }
 
