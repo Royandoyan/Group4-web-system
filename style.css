@@ -1,0 +1,196 @@
+@import url();
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+body {
+    display: flex;
+    justify-content: center; /* Horizontally centers the .wrapper */
+    align-items: center; /* Vertically centers the .wrapper */
+    min-height: 100vh; /* Ensures the body takes up at least 100% of the viewport height */
+    margin: 0; /* Removes any default margin */
+    background: url(picture/bg4.jpg) no-repeat center center fixed;
+    background-size: cover;
+}
+
+.wrapper {
+    width: 330px;
+    padding: 2rem 1rem;
+    background-color: #fff;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 20px 35px rgba(0, 0, 0, 0.1);
+}
+
+
+h1{
+    font-style: italic;
+    font-size: 2rem;
+    color: #07001f; 
+    margin-bottom: 1.2rem;
+}
+
+.input-container{   
+    position: relative;
+    margin-bottom: 15px;
+}
+
+.input-container i {
+    position: absolute;
+    left: 25px;
+    top: 39%;
+    transform: translateY(-50%);
+    color: #888;
+    font-size: 1rem;
+}
+
+form input {
+    width: 92%;
+    padding: 12px 40px; /* Adjust padding to make space for icons */
+    outline: none;
+    border: 1px solid #fff;
+    margin-bottom: 10px;
+    border-radius: 20px;
+    background: #e4e4e4;
+    transition: border 0.3s ease;
+}
+
+form input:focus {
+    border: 1px solid rgb(192, 192, 192);
+}
+
+button{
+    font-size: 1rem;
+    margin-top: 1.8rem;
+    padding: 10px 0;
+    border-radius: 20px;
+    outline: none;
+    border: none;
+    width: 90%;
+    color: #fff;
+    cursor: pointer;
+    background: rgb(143, 17, 124);
+}
+
+button:hover{
+    background: rgba(17, 107, 143, 0.877);
+}
+
+.terms{
+    margin-top: 0.2rem;  
+}
+
+.terms input{
+    height: 1rem;
+    width: 1em;
+    vertical-align: middle;
+    cursor: pointer;
+}
+
+.terms label{
+    font-size: 0.7rem;
+}
+
+.terms a{
+    color: rgb(17, 107, 143);
+    text-decoration: none;
+}
+
+.member{
+    font-size: 0.8rem;
+    margin-top: 1.4rem;
+    color: #636363;
+}
+
+.member a{
+    color: rgb(17, 107, 143);
+    text-decoration: none; 
+}
+
+.one {
+    margin-top: -0.9rem;
+    text-align: left;
+    padding-left: 1.4rem;
+}
+
+.one input {
+    height: 1rem;
+    width: 1rem;
+    margin-right: 0.5rem;
+    vertical-align: middle;
+    cursor: pointer;
+}
+
+.one label {
+    font-size: 0.9rem;
+    color: #333;
+}
+
+.recover{
+    text-align: right;
+    font-size: 0.7rem;
+    margin: 0.3rem 1.4rem 0 0;
+}
+
+.recover a{
+    text-decoration: none;
+    color: #464647;
+}
+#messageContainer {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 220px;  /* Adjust width */
+    height: 125px; /* Adjust height */
+    background-color: #ffffff; /* Change this color if needed */
+    display: flex; 
+    flex-direction: column; /* Arrange items vertically */
+    align-items: center; /* Center items horizontally */
+    justify-content: center; /* Center items vertically */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px; /* Reduced padding */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    z-index: 1000; /* Ensure it's on top */
+}
+
+#messageText {
+    text-align: center; /* Center text */
+    margin-bottom: 10px; /* Space between message and button */
+    width: 100%; /* Use full width of the container */
+}
+
+#okButton {
+    cursor: pointer;
+    margin-top: 5px; /* Space between message and button */
+}
+
+
+
+  /* Add styles for message container */
+  .message-container {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 250px;
+    height: 130px;
+    background-color: #ffffff; /* Change this color if needed */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000; /* Ensure it's on top */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2); /* Optional shadow for depth */
+    border-radius: 5px; /* Rounded corners */
+}
+.message-content {
+    text-align: center;
+    padding: 20px;
+    width: 250px;
+    height: 130px;
+}
