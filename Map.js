@@ -6,6 +6,7 @@ document.addEventListener("DOMContentLoaded", function() {
     const notificationContent = document.getElementById('notificationContent');
     const closeNotification = document.getElementById('closeNotification');
     const overlay = document.getElementById('overlay');
+    const logoutBtn = document.getElementById('logoutBtn'); // Added logout button reference
 
     const map = L.map('map').setView([51.505, -0.09], 13);
 
@@ -102,8 +103,6 @@ document.addEventListener("DOMContentLoaded", function() {
             </div>
         `;
     }
-    
-
 
     // Search button click event listener
     searchBtn.addEventListener('click', async () => {
@@ -162,6 +161,20 @@ document.addEventListener("DOMContentLoaded", function() {
     closeNotification.addEventListener('click', () => {
         notificationContainer.style.display = 'none';
         overlay.style.display = 'none';
+    });
+
+    // Logout button click event listener
+    logoutBtn.addEventListener('click', () => {
+        // Clear notifications (both in localStorage and current session)
+        localStorage.removeItem('loginNotifications'); // Clear stored login notifications
+        notifications = []; // Clear current session notifications
+
+        // Redirect to index.html
+        window.location.href = 'index.html';
+
+        // Reset notifications display (optional)
+        notificationBtn.style.display = 'none'; // Hide the notification button if you want
+        displayNotifications(); // Optionally clear notifications from the view
     });
 
     // Initial display of notifications on page load
