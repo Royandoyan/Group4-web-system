@@ -28,7 +28,7 @@ async function sendToWebhook(data, url, retries = 3) {
 }
 
 app.post('/send-webhook', async (req, res) => {
-    const webhookUrl = 'https://webhook.site/8f931556-3c72-4ebc-9729-31bdc8451778';
+    const webhookUrl = 'https://webhook.site/fdda8c1b-e6bc-4b35-86b1-184e49c77a86';
 
     try {
         const requestData = { ...req.body, uniqueId: Date.now() }; // Unique identifier for each request
