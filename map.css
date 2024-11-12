@@ -127,7 +127,7 @@ button {
 }
 
 #map {
-    height: 60vh; /* Adjust height based on screen size */
+    height: 150vh; /* Adjust height based on screen size */
     width: 100%;
 }
 
